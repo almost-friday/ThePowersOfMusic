@@ -9,36 +9,6 @@ body {
     overflow-x: hidden;
 }
 
-.logo_placeholder {
-    text-align: center;
-    font-size: 40px;
-    line-height: 100px;
-}
-
-.center {
-    position: relative;
-    text-align: center;
-}
-.block * {
-    display: inline-block;
-}
-.bottom *{
-    position: relative;
-    bottom: 0px !important;
-}
-.top *{
-    position: relative;
-    top: 0px !important;
-}
-
-@keyframes changeBG1 {
-    from {
-        background: linear-gradient(to bottom right, rgb(0, 0, 125, 0.5), rgb(120, 0, 120, 0.5));
-        background: -webkit-linear-gradient(to bottom right, rgba(60, 60, 130, 0.5), rgb(120, 0, 120, 0.5));
-    }
-    to {background: url("static/main_bg.png")}
-}
-
 #head {
     position: sticky;
     position: -webkit-sticky;
@@ -78,21 +48,21 @@ body {
 #menubar_top {
     position: relative;
     display: inline-block;
-    width: 79%;
+    width: 100%;
     margin: 2px;
     /* bottom: 0px;  */
     right: 50px;
 
     font-size: 24px;
-    text-align: right;
     /* outline: 1px solid white; */
 }
 #menubar_top * {
     position: relative;
     display: inline-block;
+    
     padding-left: 30px;
     padding-right: 30px;
-    margin-top: 10px;
+    margin-top: 20px;
 
     color: white;
     text-decoration: none;
@@ -109,7 +79,7 @@ body {
     margin-top: 0px;
     
     font-family: "Abel", "sans-serif";
-    background: url("static/main_bg.png"), black;
+    background: url("../static/main_bg.png"), black;
     background-blend-mode: exclusion;
     background-repeat: no-repeat;
 }
@@ -125,7 +95,7 @@ body {
 
 #main_description {
     position: relative;
-    width: 600px;
+    width: 800px;
     margin: auto;
 
     word-wrap: break-word;

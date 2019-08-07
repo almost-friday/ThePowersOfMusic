@@ -1,0 +1,15 @@
+.center {
+    position: relative;
+    text-align: center;
+}
+.block * {
+    display: inline-block;
+}
+.bottom *{
+    position: relative;
+    bottom: 0px !important;
+}
+.top *{
+    position: relative;
+    top: 0px !important;
+}
