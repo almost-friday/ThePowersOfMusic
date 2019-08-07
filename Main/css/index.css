@@ -9,7 +9,7 @@ body {
     overflow-x: hidden;
 }
 
-#head {
+#header{
     position: sticky;
     position: -webkit-sticky;
     /* height: 100px; */
@@ -17,29 +17,30 @@ body {
     margin-bottom: 0px;
     z-index: 3;
     
-    background-image: linear-gradient(to bottom right, rgba(60, 60, 130, 0.5), rgb(120, 0, 120, 0.5));
-    background-image: -webkit-linear-gradient(to bottom right, rgba(60, 60, 130, 0.5), rgb(120, 0, 120, 0.5));
+    background-image: linear-gradient(to bottom right, rgba(60, 60, 130, 0.5), rgba(120, 0, 120, 0.5));
+    background-image: -webkit-linear-gradient(to bottom, rgba(60, 60, 130, 0.5), rgba(120, 0, 120, 0.5));
     /* animation: changeBG1 1.0s, backwards; */
 }
 
-#logo_top {
+#header .logo {
     position: relative;
     display: inline-block;
     width: 20%;
     height: 100%;
     margin: 2px;
     outline: 2px solid white;
+
+    transition: width 0.5s, font-size 0.5s;
 }
 
-#menubar_name {
+#header_name {
     position:absolute;
     display: inline-block;
     width: 100%;
     top: 20px;
     left: 0px;
-    /* padding-left: 50px; */
 
-    font-size: 50px;
+    font-size: 5vw;
     line-height: 50px;
     text-align: center;
     font-family: 'Beth Ellen', sans-serif;
@@ -51,7 +52,7 @@ body {
     width: 100%;
     margin: 2px;
     /* bottom: 0px;  */
-    right: 50px;
+    /* right: 50px; */
 
     font-size: 24px;
     /* outline: 1px solid white; */
@@ -60,8 +61,8 @@ body {
     position: relative;
     display: inline-block;
     
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
     margin-top: 20px;
 
     color: white;
@@ -70,6 +71,17 @@ body {
 }
 #menubar_top a:visited {
     color: white;
+}
+
+#header .logo.scroll {
+    width: 10%;
+    font-size: 2.5vw;
+}
+
+#header_name.scroll {
+    display: hidden;
+    left: 40px;
+    text-align: left;
 }
 
 #main {
@@ -102,4 +114,16 @@ body {
     -ms-word-wrap: break-word;
 
     text-align: left;
+}
+
+@media (max-width: 600px) {
+    #header_name {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    #main_description {
+        width: 100%;
+    }
 }

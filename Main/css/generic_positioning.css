@@ -14,3 +14,19 @@
     position: relative;
     top: 0px !important;
 }
+
+.divider {
+    background-color: white;
+    padding: 0px !important;
+    border: none !important;
+}
+.horizontal.divider {
+    width: 98%;
+    height: 2px;
+    margin: auto;
+}
+.vertical.divider {
+    height: 98%;
+    width: 2px;
+    margin: auto;
+}
