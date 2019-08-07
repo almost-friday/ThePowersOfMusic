@@ -1,6 +1,7 @@
 .center {
     position: relative;
     text-align: center;
+	margin: auto;
 }
 .block * {
     display: inline-block;
