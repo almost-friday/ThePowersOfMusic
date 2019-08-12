@@ -48,6 +48,14 @@ body {
     transition:  top 0.5s;
 }
 
+#footer {
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	background-color: purple;
+	vertical-align: bottom;
+}
+
 /* #header .logo.scroll {
     width: 10%;
     font-size: 2.5vw;
